@@ -10,6 +10,7 @@ namespace Ejercicio_CalculoPropinas
             int respuestaP = 0;
             string respuesta = "";
             bool Salir = false;
+            bool On = true;
             bool validInput = false;
 
             while (!validInput)
@@ -28,7 +29,7 @@ namespace Ejercicio_CalculoPropinas
                 else if (!float.TryParse(input, out monto))
                 {
                     Console.WriteLine("-----------------------------------------");
-                    Console.WriteLine("\tError: El Dato Ingresado No Es Numerico");
+                    Console.WriteLine("  Error: El Dato Ingresado No Es Numerico");
                     Console.WriteLine("-----------------------------------------");
                 }
                 else if (monto < 0 || monto == 0)
@@ -62,11 +63,10 @@ namespace Ejercicio_CalculoPropinas
 
                 Console.WriteLine("-----------------------------------------");
                 Console.WriteLine("Desea Agregar Propina? 1 = Si, 0 = No");
-
                 Console.Write("-> ");
-                respuestaP = Int32.Parse(Console.ReadLine());
+                string propInput = Console.ReadLine();
 
-                if (!int.TryParse(Console.ReadLine(), out respuestaP))
+                if (!int.TryParse(propInput, out respuestaP))
                 {
                     Console.WriteLine("-----------------------------------------");
                     Console.WriteLine("Error: No Puede Ser Texto");
@@ -74,9 +74,12 @@ namespace Ejercicio_CalculoPropinas
                     Console.WriteLine("Presiona Cualquier Tecla Para Continuar");
                     Console.ReadKey();
                     Console.Clear();
+                    respuestaP = -1;
                     Salir = false;
                 }
-                else if (respuestaP < 0 || respuestaP > 1)
+
+
+                if (respuestaP < 0 || respuestaP >= 2)
                 {
                     Console.WriteLine("-----------------------------------------");
                     Console.WriteLine("Error: Dato Invalido");
@@ -91,11 +94,10 @@ namespace Ejercicio_CalculoPropinas
                     do
                     {
 
-
-                        Console.WriteLine("--------PROPINAS--------");
-                        Console.WriteLine("Excelente: 20% ");
-                        Console.WriteLine("Bueno: 15% ");
-                        Console.WriteLine("Regular: 10% ");
+                        Console.WriteLine("     --------PROPINAS--------");
+                        Console.WriteLine("         Excelente: 20% ");
+                        Console.WriteLine("         Bueno: 15% ");
+                        Console.WriteLine("         Regular: 10% ");
                         Console.WriteLine("------------------------");
                         Console.WriteLine("Ingrese La Palabra Clave");
                         Console.Write("-> ");
@@ -110,6 +112,8 @@ namespace Ejercicio_CalculoPropinas
                             Console.WriteLine($"La propina es de: {propina}");
                             Console.WriteLine($"El MontoTotal es de: {total}");
                             Console.WriteLine("------------------------------");
+                            On = false;
+                            Salir = true;
                         }
                         else if(respuesta == "Bueno")
                         {
@@ -120,6 +124,8 @@ namespace Ejercicio_CalculoPropinas
                             Console.WriteLine($"La propina es de: {propina}");
                             Console.WriteLine($"El MontoTotal es de: {total}");
                             Console.WriteLine("------------------------------");
+                            On = false;
+                            Salir = true;
                         }
                         else if(respuesta == "Regular")
                         {
@@ -130,24 +136,30 @@ namespace Ejercicio_CalculoPropinas
                             Console.WriteLine($"La propina es de: {propina}");
                             Console.WriteLine($"El MontoTotal es de: {total}");
                             Console.WriteLine("------------------------------");
+                            On = false;
+                            Salir = true;
                         }
                         else
                         {
                             Console.WriteLine("-----------------------------------------");
                             Console.WriteLine("Error: Dato Invalido");
                             Console.WriteLine("-----------------------------------------");
+                            Console.WriteLine("Presiona Cualquier Tecla Para Continuar");
+                            Console.ReadKey();
+                            Console.Clear();
+                            On = true;
+
                         }
-                    } while (respuesta != "Excelente" && respuesta != "Bueno" && respuesta != "Regular");
+                    } while (On == true);
 
                 }
-
 
                 else if (respuestaP == 0)
                 {
                     Console.WriteLine("-----------------------------------------");
                     Console.WriteLine("Gracias Por Utilizar Nuestro Servicio");
                     Console.WriteLine("-----------------------------------------");
-                    Console.WriteLine("Presiona Cualquier Tecla Para Continuar");
+                    Console.WriteLine("Presiona Cualquier Tecla Para Salir");
                     Console.ReadKey();
                     Console.Clear();
                     Salir = true;
