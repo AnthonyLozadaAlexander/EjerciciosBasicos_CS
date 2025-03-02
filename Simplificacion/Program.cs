@@ -90,7 +90,7 @@ namespace EjerciciosSimplificacion
                         Console.WriteLine($"Precio: {precioB[i]}");
                     }
                 }
-
+                
                 Console.WriteLine("--------------------------------------");
                 Console.WriteLine("-------IngredientesDeLaComida---------");
                 if (opcionC == 1)

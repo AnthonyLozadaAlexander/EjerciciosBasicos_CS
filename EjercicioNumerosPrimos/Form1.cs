@@ -17,7 +17,7 @@ namespace EjercicioNumerosPrimos
         private void btn_Calcular_Click(object sender, EventArgs e)
         {
             listBox_Primos.Items.Clear();
-
+            
             double numero;
             for (numero = 2; numero <= 100; numero++)
             {
