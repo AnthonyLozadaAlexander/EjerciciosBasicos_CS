@@ -53,7 +53,7 @@ namespace EjercicioNumerosPrimos
                 return false;
             }
 
-            // Only need to check up to the square root of the number.
+            // Solo es necesario verificar hasta la raíz cuadrada del número dado que si un número no es primo, al menos uno de los factores debe ser menor o igual a la raíz cuadrada del número.
             for (int i = 2; i <= Math.Sqrt(numero); i++)
             {
                 if (numero % i == 0)
