@@ -58,15 +58,11 @@ namespace Ejercicio_Polinomio
 
             } while(a == 0 || b == 0 || c == 0 || d == 0 || x == 0);
 
-            resultado = (a * Math.Pow(x, 3) + b * Math.Pow(x, 2) + c * x + d);
+            resultado = (a * Math.Pow(x, 3) + b * Math.Pow(x, 2) + (c * x) + d);
 
-            Console.WriteLine("-------------------------------------------------");
+            Console.WriteLine("---------------------------------------------------------------------");
             Console.WriteLine($"El Resultado Del Polinomio de {a}({x})^3 + {b}({x})^2 + {c}({x}) + {d} es: {resultado}");
-            Console.WriteLine("-------------------------------------------------");
-
-            Console.WriteLine("      Gracias Por Usar El Programa");
-
-            Console.WriteLine("---------------------------------------------\n");
+            Console.WriteLine("---------------------------------------------------------------------\n");
 
             string respuesta = "";
             Console.WriteLine("Desea Realizar Otra Operacion? (S/N)");
