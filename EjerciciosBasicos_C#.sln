@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioLogica", "Ejercici
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioDeterminarPrimos", "EjercicioDeterminarPrimos\EjercicioDeterminarPrimos.csproj", "{2441D732-8F10-456F-BE11-1DFC60A19304}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeterminarPrimoV2", "DeterminarPrimoV2\DeterminarPrimoV2.csproj", "{983B6FCF-EA58-4353-9AB5-B672725ADE14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{2441D732-8F10-456F-BE11-1DFC60A19304}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2441D732-8F10-456F-BE11-1DFC60A19304}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2441D732-8F10-456F-BE11-1DFC60A19304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{983B6FCF-EA58-4353-9AB5-B672725ADE14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983B6FCF-EA58-4353-9AB5-B672725ADE14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983B6FCF-EA58-4353-9AB5-B672725ADE14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983B6FCF-EA58-4353-9AB5-B672725ADE14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
