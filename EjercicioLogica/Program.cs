@@ -58,22 +58,22 @@ namespace EjercicioLogica
 
             }
 
-            Console.WriteLine("Dentro Del Array FizzBuzz Estan Los Elementos");
+            Console.WriteLine("Dentro Del Array FizzBuzz Estan Los Elementos:");
             for(int i = 0; i < FizzBuzz.Length; i++)
             {
                 Console.WriteLine($"FizzBuzz[{i}] -> {FizzBuzz[i]}");
             }
             Console.WriteLine("-------------------------------");
-            Console.WriteLine("Dentro Del Array Fizz Estan Los Elementos");
+            Console.WriteLine("Dentro Del Array Fizz Estan Los Elementos:");
             for (int j = 0; j < Fizz.Length; j++)
             {
                 Console.WriteLine($"Fizz[{j}] -> {Fizz[j]}");
             }
             Console.WriteLine("-------------------------------");
-            Console.WriteLine("Dentro Del Array Fizz Estan Los Elementos");
-            for (int j = 0; j < Fizz.Length; j++)
+            Console.WriteLine("Dentro Del Array Buzz Estan Los Elementos:");
+            for (int k = 0; k < Buzz.Length; k++)
             {
-                Console.WriteLine($"Fizz[{j}] -> {Fizz[j]}");
+                Console.WriteLine($"Fizz[{k}] -> {Buzz[k]}");
             }
             Console.WriteLine("-------------------------------");
 
