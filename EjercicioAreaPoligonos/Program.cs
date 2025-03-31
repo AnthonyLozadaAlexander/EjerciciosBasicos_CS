@@ -55,7 +55,21 @@ static void Main(String[] args)
         }
         else if (opc == "1")
         {
-            
+            Console.WriteLine("Ingrese los lados del triangulo");
+            Console.Write("-> ");
+            lados = float.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese la altura del triangulo");
+            Console.Write("-> ");
+            altura = float.Parse(Console.ReadLine());
+            // verificara si es un triangulo
+            if (esTriangulo(lados, altura) == true)
+            {
+                Console.WriteLine("El Area Del Triangulo Es: " + areaPoligono(lados,altura));
+            }
+            else
+            {
+                Console.WriteLine("\nError: El Poligono Ingresado No Es Un Triangulo\n");
+            }
         }
         else if (opc == "2")
         {
