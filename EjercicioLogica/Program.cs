@@ -102,7 +102,7 @@ namespace EjercicioLogica
             {
                 if (Buzz[k] != 0)
                 {
-                    Console.WriteLine($"Fizz[{k}] -> {Buzz[k]}");
+                    Console.WriteLine($"Buzz[{k}] -> {Buzz[k]}");
                 }
             }
             Console.WriteLine("-------------------------------");
