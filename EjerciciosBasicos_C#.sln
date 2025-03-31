@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_CalculoPropinas",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio_Polinomio", "Ejercicio_Polinomio\Ejercicio_Polinomio.csproj", "{42D34177-CF37-4D35-B62E-6F7FFB8AFD83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioLogica", "EjercicioLogica\EjercicioLogica.csproj", "{45DC5B14-8FA4-4F37-8341-871E8749FEDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{42D34177-CF37-4D35-B62E-6F7FFB8AFD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42D34177-CF37-4D35-B62E-6F7FFB8AFD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42D34177-CF37-4D35-B62E-6F7FFB8AFD83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45DC5B14-8FA4-4F37-8341-871E8749FEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45DC5B14-8FA4-4F37-8341-871E8749FEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45DC5B14-8FA4-4F37-8341-871E8749FEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45DC5B14-8FA4-4F37-8341-871E8749FEDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
