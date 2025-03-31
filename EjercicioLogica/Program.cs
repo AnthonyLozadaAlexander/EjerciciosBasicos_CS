@@ -77,7 +77,7 @@ namespace EjercicioLogica
             }
 
             Console.WriteLine("Dentro Del Array FizzBuzz Estan Los Elementos:");
-            Console.WriteLine("Multiplos De 3 y 5:");
+            Console.WriteLine("Multiplos De 3 y 5: " + "["+(countFizzBuzz-1)+"]");
             for(int i = 0; i < FizzBuzz.Length; i++)
             {
                 if (FizzBuzz[i] != 0)
@@ -86,7 +86,7 @@ namespace EjercicioLogica
                 }
             }
             Console.WriteLine("-------------------------------");
-            Console.WriteLine("Multiplos De 3:");
+            Console.WriteLine("Multiplos De 3: " + "["+(countFizz-1)+"]");
             Console.WriteLine("Dentro Del Array Fizz Estan Los Elementos:");
             for (int j = 0; j < Fizz.Length; j++)
             {
@@ -97,7 +97,7 @@ namespace EjercicioLogica
             }
             Console.WriteLine("-------------------------------");
             Console.WriteLine("Dentro Del Array Buzz Estan Los Elementos:");
-            Console.WriteLine("Multiplos De 5:");
+            Console.WriteLine("Multiplos De 5: " + "["+(countBuzz - 1) +"]");
             for (int k = 0; k < Buzz.Length; k++)
             {
                 if (Buzz[k] != 0)
