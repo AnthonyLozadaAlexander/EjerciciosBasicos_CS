@@ -34,10 +34,10 @@ namespace EjercicioAreaPoligonos
             return (lados == 3 && altura > 0);
         }
 
-        static bool esCuadrado(float lados)
+        static bool esCuadrado(float countLados)
         {
             // Verifica que el numero de lados sea 4 para que sea un cuadrado 
-            return (lados == 4);
+            return (countLados == 4);
         }
 
         public static void Main(string[] args)
@@ -92,6 +92,7 @@ namespace EjercicioAreaPoligonos
                         Console.WriteLine("Ingrese El Tamaño De Los Lados Del Cuadrado");
                         Console.Write("-> ");
                         lados = float.Parse(Console.ReadLine());
+                        // en este caso altura, sera la longitud del cuadrado y lados la cantidad de lados para verificar la condicion
                         Console.WriteLine("\nEl Area Del Cuadrado Es: " + areaPoligono(4, lados) + "\n");
                     }
                     else
