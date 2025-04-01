@@ -19,7 +19,7 @@ namespace EjercicioAreaPoligonos
 
             if (Cuadrado == true)
             {
-                Area = (float)Math.Pow(lados, 2);
+                Area = (float)Math.Pow(altura, 2);
                 return Area;
             }
             else
@@ -36,23 +36,26 @@ namespace EjercicioAreaPoligonos
 
         static bool esCuadrado(float lados)
         {
+            // Verifica que el numero de lados sea 4 para que sea un cuadrado 
             return (lados == 4);
         }
 
         public static void Main(string[] args)
         {
-            float lados, altura;
+            float lados, altura, countLados;
             string opc;
             Console.WriteLine("----------------------------");
             Console.WriteLine("         BIENVENIDO");
             Console.WriteLine("----------------------------");
+            
             Console.WriteLine("Escoga El Poligono A Calcular");
+            do{
             Console.WriteLine("----------------------------");
             Console.WriteLine("1.- Triangulo");
             Console.WriteLine("2.- Cuadrado");
+            Console.WriteLine("3.- Salir");
             Console.WriteLine("----------------------------");
-            do
-            {
+            
                 Console.WriteLine("Digite La Opcion");
                 Console.Write("-> ");
                 opc = Console.ReadLine();
@@ -80,13 +83,35 @@ namespace EjercicioAreaPoligonos
                 }
                 else if (opc == "2")
                 {
-
+                    Console.WriteLine("Ingrese Cuantos Lados Tiene El Cuadrado");
+                    Console.Write("-> ");
+                    countLados = float.Parse(Console.ReadLine());
+                    // verificara si es un Cuadrado
+                    if (esCuadrado(countLados) == true)
+                    {
+                        Console.WriteLine("Ingrese El Tamaño De Los Lados Del Cuadrado");
+                        Console.Write("-> ");
+                        lados = float.Parse(Console.ReadLine());
+                        Console.WriteLine("\nEl Area Del Cuadrado Es: " + areaPoligono(4, lados) + "\n");
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nError: El Poligono Ingresado No Es Un Cuadrado\n");
+                    }
+                }
+                else if (opc == "3")
+                {
+                    Console.WriteLine("\nGracias Por Usar El Programa\n");
+                    Console.WriteLine("Ingrese Un Boton Para Salir");
+                    break;
                 }
                 else
                 {
                     Console.WriteLine("\nError: Ingrese Una Opcion Valida\n");
                 }
             } while (opc == String.Empty || opc == "1" || opc == "2" || (opc != "1" && opc != "2"));
+            
+            Console.ReadKey();
         }
     }
 }
