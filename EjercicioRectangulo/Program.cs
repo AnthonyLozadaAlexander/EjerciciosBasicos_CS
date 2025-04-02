@@ -35,13 +35,13 @@
                 }
                 else
                 {
-                    Console.WriteLine("Datos Ingresados: ");
+                    Console.WriteLine("\nDatos Ingresados: ");
                     Console.WriteLine("Base: " + Base);
-                    Console.WriteLine("Altura: " + Altura);
+                    Console.WriteLine("Altura: " + Altura + "\n");
                 }
             } while (Base < 0 || Altura < 0);
 
-            Console.WriteLine("\n El Area Del Rectangulo es: " + areaR(Base, Altura));
+            Console.WriteLine("\nEl Area Del Rectangulo es: " + areaR(Base, Altura));
             Console.WriteLine("\nEl Perimetro Del Rectangulo es: " + perimetroR(Base, Altura));
         }
     }
