@@ -5,7 +5,7 @@
         static float perimetroR(float Base, float Altura)
         {
             float R = 0f;
-            R = (float) Math.Pow(Base, 2) + (float) Math.Pow(Altura, 2);
+            R = (Base * 2) + (Altura * 2); // Correccion De Formula
             return R;
         }
 
