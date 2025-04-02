@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeterminarPrimoV2", "Determ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioAreaPoligonos", "EjercicioAreaPoligonos\EjercicioAreaPoligonos.csproj", "{1AE76716-A5A1-4BDB-9469-DE9DE2AAA0CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjercicioRectangulo", "EjercicioRectangulo\EjercicioRectangulo.csproj", "{F48B26BB-03D0-47B5-8565-BF844ABE5D66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{1AE76716-A5A1-4BDB-9469-DE9DE2AAA0CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AE76716-A5A1-4BDB-9469-DE9DE2AAA0CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AE76716-A5A1-4BDB-9469-DE9DE2AAA0CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48B26BB-03D0-47B5-8565-BF844ABE5D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48B26BB-03D0-47B5-8565-BF844ABE5D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48B26BB-03D0-47B5-8565-BF844ABE5D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48B26BB-03D0-47B5-8565-BF844ABE5D66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
