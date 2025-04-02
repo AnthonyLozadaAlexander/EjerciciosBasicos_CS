@@ -92,6 +92,7 @@ namespace EjercicioAreaPoligonos
                         Console.WriteLine("Ingrese El Tamaño De Los Lados Del Cuadrado");
                         Console.Write("-> ");
                         lados = float.Parse(Console.ReadLine());
+                        
                         // en este caso altura, sera la longitud del cuadrado y lados la cantidad de lados para verificar la condicion
                         Console.WriteLine("\nEl Area Del Cuadrado Es: " + areaPoligono(4, lados) + "\n");
                     }
